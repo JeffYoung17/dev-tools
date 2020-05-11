@@ -29,6 +29,7 @@ prefix + % : 水平划分
 prefix + " : 垂直划分
 prefix + x : 关闭窗格
 prefix + 方向键或者o : 切换窗格
+prefix + z : 当前窗格的放大zoom（恢复就是再按一次）
 ```
 ### 参考资料
 
@@ -49,3 +50,17 @@ prefix + 方向键或者o : 切换窗格
 docker在线使用网站: docker playground  
 
 [【docker入门】10分钟，快速学会docker](https://www.bilibili.com/video/BV1R4411F7t9?from=search&seid=12140693276330420335)
+
+## 3. SSH
+
+取消ssh私钥的安全密码(passphrase)
+
+```shell
+# 使用openssl重新生成不带密码的私钥
+openssl rsa -in ~/.ssh/id_rsa -out ~/.ssh/id_rsa_new
+mv ~/.ssh/id_rsa ~/.ssh/id_rsa.backup
+mv ~/.ssh/id_rsa_new ~/.ssh/id_rsa
+chmod 600 ~/.ssh/id_rsa
+```
+### 参考资料
+[openssl重新生成不带密码的私钥](https://www.jianshu.com/p/9c646aceaa65)
