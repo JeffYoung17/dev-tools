@@ -64,3 +64,10 @@ chmod 600 ~/.ssh/id_rsa
 ```
 ### 参考资料
 [openssl重新生成不带密码的私钥](https://www.jianshu.com/p/9c646aceaa65)
+
+## 4. 压缩解压缩软件
+zip，unzip，tar
+```shell
+unzip zipped_file.zip # 当前路径
+unzip zipped_file.zip -d unzipped_directory # 指定路径
+```
