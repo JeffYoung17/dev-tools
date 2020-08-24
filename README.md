@@ -71,3 +71,16 @@ zip，unzip，tar
 unzip zipped_file.zip # 当前路径
 unzip zipped_file.zip -d unzipped_directory # 指定路径
 ```
+
+## 5. ftp（file transfer protocol）
+```shell
+sudo apt-get install vsftpd
+sudo vim /etc/vsftpd.conf
+sudo service vsftpd restart
+# 客户端软件：FileZilla
+```
+
+[1. ubuntu server vsftpd 匿名用户上传下载及目录设置](https://www.cnblogs.com/cocoajin/p/3761414.html)
+
+[2. Ubuntu 和 Windows 文件互传（FTP服务）](https://blog.csdn.net/p1279030826/article/details/105020844)
+
