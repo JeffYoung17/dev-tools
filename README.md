@@ -78,6 +78,8 @@ sudo apt-get install vsftpd
 sudo vim /etc/vsftpd.conf
 sudo service vsftpd restart
 # 客户端软件：FileZilla
+（1）windows端文件正常，上传到ubuntu服务器后，在服务器端查看乱码，在客户端-站点管理器设置编码格式强制为UTF-8；
+（2）匿名用户通过设置ftp用户可以上传，但是不能下载，chmod 777 -R dir后解决；
 ```
 
 [1. ubuntu server vsftpd 匿名用户上传下载及目录设置](https://www.cnblogs.com/cocoajin/p/3761414.html)
