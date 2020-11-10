@@ -30,10 +30,17 @@ prefix + " : 垂直划分
 prefix + x : 关闭窗格
 prefix + 方向键或者o : 切换窗格
 prefix + z : 当前窗格的放大zoom（恢复就是再按一次）
+
+# others
+tmux ls
+tmux a -t $session_name : 进入会话
+tmux kill-session -t $session_name
 ```
+
 ### 参考资料
 
-[bilibili十分钟掌握 tmux](https://www.bilibili.com/video/BV1ab411J7xT?from=search&seid=6153849982347372287)
+[bilibili十分钟掌握 tmux](https://www.bilibili.com/video/BV1ab411J7xT?from=search&seid=6153849982347372287)  
+[tmux如何将内容复制到系统clipboard?](https://www.zhihu.com/question/52120702)
 
 ## 2. docker
 
